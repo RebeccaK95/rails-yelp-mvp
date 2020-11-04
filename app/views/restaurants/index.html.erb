@@ -1,0 +1,10 @@
+
+<div class="container">
+<ul style="list-style-type:none;">
+  <% @restaurants.each do |restaurant| %>
+  <li>
+    <h2><%= link_to restaurant.name, "restaurants/#{restaurant.id}" %></h2>
+  </li>
+  <% end %>
+</ul>
+</div>
